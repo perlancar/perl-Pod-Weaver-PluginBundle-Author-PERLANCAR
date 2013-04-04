@@ -10,8 +10,9 @@ sub _exp { Pod::Weaver::Config::Assembler->expand_package($_[0]) }
 
 sub mvp_bundle_config {
     return (
-        [ '@SHARYANTO',  _exp('@Default'),    {} ],
-        [ '@SHARYANTO',  _exp('-Perinci'),    {} ],
+        [ '@SHARYANTO',                       _exp('@Default'),              {} ],
+        [ '@SHARYANTO/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
+        [ '@SHARYANTO/Perinci',               _exp('-Perinci'),              {} ],
     );
 }
 
@@ -35,6 +36,7 @@ or in C<dist.ini>:
 Equivalent to:
 
  [@Default]
+ [-EnsureUniqueSections]
  [-Perinci]
 
 

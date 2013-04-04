@@ -11,8 +11,8 @@ sub _exp { Pod::Weaver::Config::Assembler->expand_package($_[0]) }
 sub mvp_bundle_config {
     return (
         [ '@SHARYANTO',                          _exp('@Default'),              {} ],
-        [ '@SHARYANTO/PW/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
         [ '@SHARYANTO/PW/Perinci',               _exp('-Perinci'),              {} ],
+        [ '@SHARYANTO/PW/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
     );
 }
 

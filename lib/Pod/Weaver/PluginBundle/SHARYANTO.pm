@@ -19,6 +19,8 @@ sub mvp_bundle_config {
 1;
 # ABSTRACT: SHARYANTO's default Pod::Weaver config
 
+=for Pod::Coverage .*
+
 =head1 SYNOPSIS
 
 In C<weaver.ini>:

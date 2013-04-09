@@ -13,6 +13,7 @@ sub mvp_bundle_config {
         [ '@SHARYANTO',                          _exp('@Default'),              {} ],
         [ '@SHARYANTO/PW/Perinci',               _exp('-Perinci'),              {} ],
         [ '@SHARYANTO/PW/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
+        [ '@SHARYANTO/PW/Encoding',              _exp('-Encoding'),             {} ],
     );
 }
 
@@ -40,6 +41,7 @@ Equivalent to:
  [@Default]
  [-EnsureUniqueSections]
  [-Perinci]
+ [-Encoding]
 
 
 =head1 SEE ALSO

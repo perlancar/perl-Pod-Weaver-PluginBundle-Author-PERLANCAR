@@ -10,12 +10,34 @@ sub _exp { Pod::Weaver::Config::Assembler->expand_package($_[0]) }
 
 sub mvp_bundle_config {
     return (
-        [ '@Author::SHARYANTO/PW/Perinci',               _exp('-Perinci'),              {} ],
-        [ '@Author::SHARYANTO/PW/Encoding',              _exp('-Encoding'),             {} ],
-        [ '@Author::SHARYANTO/PW/Availability',          _exp('Availability'),          {} ],
-        [ '@Author::SHARYANTO/PW/SourceGitHub',          _exp('SourceGitHub'),          {} ],
-        [ '@Author::SHARYANTO',                          _exp('@Default'),              {} ],
-        [ '@Author::SHARYANTO/PW/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
+        [ '@Author::SHARYANTO/CorePrep', _exp('@CorePrep'), {} ],
+        [ '@Author::SHARYANTO/Name', _exp('Name'), {} ],
+        [ '@Author::SHARYANTO/prelude', _exp('Region'), { region_name => 'prelude' } ],
+
+        [ 'SYNOPSIS', _exp('Generic'), {} ],
+        [ 'DESCRIPTION', _exp('Generic'), {} ],
+        [ 'OVERVIEW', _exp('Generic'), {} ],
+
+        [ 'ATTRIBUTES', _exp('Collect'), { command => 'attr' } ],
+        [ 'METHODS', _exp('Collect'), { command => 'method' } ],
+        [ 'FUNCTIONS', _exp('Collect'), { command => 'func' } ],
+        #[ 'TYPES', _exp('Collect'), { command => ' } ],
+
+        [ '@Author::SHARYANTO/PW/Perinci', _exp('-Perinci'), {} ],
+
+        [ '@Author::SHARYANTO/PW/Availability', _exp('Availability'), {} ],
+        [ '@Author::SHARYANTO/PW/SourceGitHub', _exp('SourceGitHub'), {} ],
+        [ '@Author::SHARYANTO/PW/BugsRT', _exp('BugsRT'), {} ],
+
+        [ '@Author::SHARYANTO/Leftovers', _exp('Leftovers'), {} ],
+        [ '@Author::SHARYANTO/postlude',  _exp('Region'), { region_name => 'postlude' } ],
+
+        [ '@Author::SHARYANTO/Authors', _exp('Authors'), {} ],
+        [ '@Author::SHARYANTO/Legal', _exp('Legal'), {} ],
+
+        [ '@Author::SHARYANTO/PW/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
+        #[ '@Author::SHARYANTO/List', _exp('-Transformer'), { transformer => 'List' } ],
+        [ '@Author::SHARYANTO/PW/Encoding', _exp('-Encoding'), {} ],
     );
 }
 
@@ -38,14 +60,7 @@ or in C<dist.ini>:
 
 =head1 DESCRIPTION
 
-Equivalent to:
-
- [@Default]
- [-EnsureUniqueSections]
- [-Perinci]
- [-Encoding]
- [Availability]
- [SourceGitHub]
+Equivalent to (see source code).
 
 
 =head1 SEE ALSO

@@ -10,10 +10,12 @@ sub _exp { Pod::Weaver::Config::Assembler->expand_package($_[0]) }
 
 sub mvp_bundle_config {
     return (
-        [ '@Author::SHARYANTO',                          _exp('@Default'),              {} ],
         [ '@Author::SHARYANTO/PW/Perinci',               _exp('-Perinci'),              {} ],
-        [ '@Author::SHARYANTO/PW/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
         [ '@Author::SHARYANTO/PW/Encoding',              _exp('-Encoding'),             {} ],
+        [ '@Author::SHARYANTO/PW/Availability',          _exp('Availability'),          {} ],
+        [ '@Author::SHARYANTO/PW/SourceGitHub',          _exp('SourceGitHub'),          {} ],
+        [ '@Author::SHARYANTO',                          _exp('@Default'),              {} ],
+        [ '@Author::SHARYANTO/PW/EnsureUniqueSections',  _exp('-EnsureUniqueSections'), {} ],
     );
 }
 
@@ -42,6 +44,8 @@ Equivalent to:
  [-EnsureUniqueSections]
  [-Perinci]
  [-Encoding]
+ [Availability]
+ [SourceGitHub]
 
 
 =head1 SEE ALSO

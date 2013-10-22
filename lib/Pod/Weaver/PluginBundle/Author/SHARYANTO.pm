@@ -23,21 +23,20 @@ sub mvp_bundle_config {
         [ 'FUNCTIONS', _exp('Collect'), { command => 'func' } ],
         #[ 'TYPES', _exp('Collect'), { command => ' } ],
 
-        [ '@Author::SHARYANTO/PW/Perinci', _exp('-Perinci'), {} ],
-
-        [ '@Author::SHARYANTO/PW/Availability', _exp('Availability'), {} ],
-        [ '@Author::SHARYANTO/PW/SourceGitHub', _exp('SourceGitHub'), {} ],
-        [ '@Author::SHARYANTO/PW/BugsRT', _exp('BugsRT'), {} ],
+        [ '@Author::SHARYANTO/Perinci', _exp('-Perinci'), {} ],
 
         [ '@Author::SHARYANTO/Leftovers', _exp('Leftovers'), {} ],
         [ '@Author::SHARYANTO/postlude',  _exp('Region'), { region_name => 'postlude' } ],
 
+        [ '@Author::SHARYANTO/Homepage::DefaultCPAN', _exp('Homepage::DefaultCPAN'), {} ],
+        [ '@Author::SHARYANTO/Source::DefaultGitHub', _exp('Source::DefaultGitHub'), {} ],
+        [ '@Author::SHARYANTO/Bugs::DefaultRT', _exp('Bugs::DefaultRT'), {} ],
         [ '@Author::SHARYANTO/Authors', _exp('Authors'), {} ],
         [ '@Author::SHARYANTO/Legal', _exp('Legal'), {} ],
 
-        [ '@Author::SHARYANTO/PW/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
+        [ '@Author::SHARYANTO/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
         #[ '@Author::SHARYANTO/List', _exp('-Transformer'), { transformer => 'List' } ],
-        [ '@Author::SHARYANTO/PW/Encoding', _exp('-Encoding'), {} ],
+        [ '@Author::SHARYANTO/Encoding', _exp('-Encoding'), {} ],
     );
 }
 

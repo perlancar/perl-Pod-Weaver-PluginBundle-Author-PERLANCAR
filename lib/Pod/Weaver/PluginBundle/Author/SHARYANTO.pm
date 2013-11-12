@@ -37,7 +37,7 @@ sub mvp_bundle_config {
 
         [ '@Author::SHARYANTO/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
         #[ '@Author::SHARYANTO/List', _exp('-Transformer'), { transformer => 'List' } ],
-        [ '@Author::SHARYANTO/Encoding', _exp('-Encoding'), {} ],
+        [ '@Author::SHARYANTO/SingleEncoding', _exp('-SingleEncoding'), {} ],
     );
 }
 

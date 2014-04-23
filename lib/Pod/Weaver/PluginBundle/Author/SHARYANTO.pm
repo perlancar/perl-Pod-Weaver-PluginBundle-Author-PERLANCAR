@@ -13,6 +13,7 @@ sub mvp_bundle_config {
         [ '@Author::SHARYANTO/CorePrep', _exp('@CorePrep'), {} ],
         [ '@Author::SHARYANTO/Name', _exp('Name'), {} ],
         [ '@Author::SHARYANTO/Version', _exp('Version'), {} ],
+        [ '@Author::SHARYANTO/ReleaseDate', _exp('ReleaseDate'), {} ],
         [ '@Author::SHARYANTO/prelude', _exp('Region'), { region_name => 'prelude' } ],
 
         [ 'SYNOPSIS', _exp('Generic'), {} ],

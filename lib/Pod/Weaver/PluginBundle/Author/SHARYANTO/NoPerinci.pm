@@ -12,7 +12,7 @@ sub mvp_bundle_config {
     return (
         [ '@Author::SHARYANTO/CorePrep', _exp('@CorePrep'), {} ],
         [ '@Author::SHARYANTO/Name', _exp('Name'), {} ],
-        [ '@Author::SHARYANTO/Version', _exp('Version'), {format=>'This document describes version %v of module %m (in distribution %r), released on %{YYYY-MM-dd}d.'} ],
+        [ '@Author::SHARYANTO/Version', _exp('Version'), {format=>'This document describes version %v of module %m (in Perl distribution %r), released on %{YYYY-MM-dd}d.'} ],
         [ '@Author::SHARYANTO/prelude', _exp('Region'), { region_name => 'prelude' } ],
 
         [ 'SYNOPSIS', _exp('Generic'), {} ],

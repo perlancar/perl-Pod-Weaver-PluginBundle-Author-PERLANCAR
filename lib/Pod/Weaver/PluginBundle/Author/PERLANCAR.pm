@@ -30,6 +30,7 @@ sub mvp_bundle_config {
         [ '@Author::PERLANCAR/Leftovers', _exp('Leftovers'), {} ],
         [ '@Author::PERLANCAR/postlude',  _exp('Region'), { region_name => 'postlude' } ],
 
+        [ '@Author::PERLANCAR/BashCompletion::GetoptLongComplete', _exp('BashCompletion::GetoptLongComplete'), {} ],
         [ '@Author::PERLANCAR/BashCompletion::PerinciCmdLine', _exp('BashCompletion::PerinciCmdLine'), {} ],
 
         [ '@Author::PERLANCAR/Homepage::DefaultCPAN', _exp('Homepage::DefaultCPAN'), {} ],

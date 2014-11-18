@@ -25,7 +25,7 @@ sub mvp_bundle_config {
         [ 'FUNCTIONS', _exp('Collect'), { command => 'func' } ],
         #[ 'TYPES', _exp('Collect'), { command => ' } ],
 
-        [ '@Author::PERLANCAR/Perinci', _exp('-Perinci'), {} ],
+        [ '@Author::PERLANCAR/Rinci', _exp('-Rinci'), {} ],
 
         [ '@Author::PERLANCAR/Leftovers', _exp('Leftovers'), {} ],
         [ '@Author::PERLANCAR/postlude',  _exp('Region'), { region_name => 'postlude' } ],

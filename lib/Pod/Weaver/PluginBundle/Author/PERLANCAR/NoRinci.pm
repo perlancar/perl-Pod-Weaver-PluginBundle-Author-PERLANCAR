@@ -1,4 +1,4 @@
-package Pod::Weaver::PluginBundle::Author::PERLANCAR::NoPerinci;
+package Pod::Weaver::PluginBundle::Author::PERLANCAR::NoRinci;
 
 # DATE
 # VERSION

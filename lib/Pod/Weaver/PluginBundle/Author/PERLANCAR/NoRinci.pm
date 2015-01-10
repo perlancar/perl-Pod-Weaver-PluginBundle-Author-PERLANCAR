@@ -29,7 +29,10 @@ sub mvp_bundle_config {
         [ '@Author::PERLANCAR/postlude',  _exp('Region'), { region_name => 'postlude' } ],
 
         [ '@Author::PERLANCAR/Completion::GetoptLongComplete', _exp('Completion::GetoptLongComplete'), {} ],
-        [ '@Author::PERLANCAR/Completion::PerinciCmdLine', _exp('Completion::PerinciCmdLine'), {} ],
+        #[ '@Author::PERLANCAR/Completion::PerinciCmdLine', _exp('Completion::PerinciCmdLine'), {} ],
+
+        #[ '@Author::PERLANCAR/Environment::PerinciCmdLine', _exp('Environment::PerinciCmdLine'), {} ],
+        #[ '@Author::PERLANCAR/Files::PerinciCmdLine', _exp('Files::PerinciCmdLine'), {} ],
 
         [ '@Author::PERLANCAR/Homepage::DefaultCPAN', _exp('Homepage::DefaultCPAN'), {} ],
         [ '@Author::PERLANCAR/Source::DefaultGitHub', _exp('Source::DefaultGitHub'), {} ],

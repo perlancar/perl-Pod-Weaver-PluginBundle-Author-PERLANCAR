@@ -1,5 +1,12 @@
 Revision history for Pod-Weaver-PluginBundle-Author-PERLANCAR
 
+0.21    2015-01-13 (PERLANCAR)
+
+	- No longer uses plugins PWP::Environment::PerinciCmdLine &
+	  PWP::Files::PerinciCmdLine (functionalities have been merged into
+	  PWP::Rinci).
+
+
 0.20    2015-01-10 (PERLANCAR)
 
 	- Add sections: Environment::PerinciCmdLine, Files::PerinciCmdLine.

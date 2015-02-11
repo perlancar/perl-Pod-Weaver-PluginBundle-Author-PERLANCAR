@@ -1,5 +1,10 @@
 Revision history for Pod-Weaver-PluginBundle-Author-PERLANCAR
 
+0.22    2015-02-11 (PERLANCAR)
+
+	- Add section: Completion::GetoptLongSubcommand.
+
+
 0.21    2015-01-13 (PERLANCAR)
 
 	- No longer uses plugins PWP::Environment::PerinciCmdLine &

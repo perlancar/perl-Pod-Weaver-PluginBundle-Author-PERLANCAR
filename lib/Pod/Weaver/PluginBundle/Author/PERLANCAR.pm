@@ -25,8 +25,6 @@ sub mvp_bundle_config {
         [ 'FUNCTIONS', _exp('Collect'), { command => 'func' } ],
         #[ 'TYPES', _exp('Collect'), { command => ' } ],
 
-        [ '@Author::PERLANCAR/Rinci', _exp('-Rinci'), {} ],
-
         [ '@Author::PERLANCAR/Leftovers', _exp('Leftovers'), {} ],
         [ '@Author::PERLANCAR/postlude',  _exp('Region'), { region_name => 'postlude' } ],
 
@@ -40,9 +38,12 @@ sub mvp_bundle_config {
         [ '@Author::PERLANCAR/Authors', _exp('Authors'), {} ],
         [ '@Author::PERLANCAR/Legal', _exp('Legal'), {} ],
 
+        [ '@Author::PERLANCAR/Rinci', _exp('-Rinci'), {} ],
+
         [ '@Author::PERLANCAR/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
         #[ '@Author::PERLANCAR/List', _exp('-Transformer'), { transformer => 'List' } ],
         [ '@Author::PERLANCAR/SingleEncoding', _exp('-SingleEncoding'), {} ],
+
     );
 }
 

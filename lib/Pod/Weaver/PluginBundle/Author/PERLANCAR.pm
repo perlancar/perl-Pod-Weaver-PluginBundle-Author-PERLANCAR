@@ -40,6 +40,8 @@ sub mvp_bundle_config {
 
         [ '@Author::PERLANCAR/Rinci', _exp('-Rinci'), {} ],
 
+        [ '@Author::PERLANCAR/AppendPrepend', _exp('-AppendPrepend'), {} ],
+
         [ '@Author::PERLANCAR/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
         #[ '@Author::PERLANCAR/List', _exp('-Transformer'), { transformer => 'List' } ],
         [ '@Author::PERLANCAR/SingleEncoding', _exp('-SingleEncoding'), {} ],

@@ -1,5 +1,14 @@
 Revision history for Pod-Weaver-PluginBundle-Author-PERLANCAR
 
+0.23    2015-04-04 (PERLANCAR)
+
+	- Add plugin: AppendPrepend.
+
+	- Reorder plugin: push Rinci almost at the end so it can see the
+	  other sections and place new sections in the appropriate
+	  position.
+
+
 0.22    2015-02-11 (PERLANCAR)
 
 	- Add section: Completion::GetoptLongSubcommand.

@@ -1,5 +1,12 @@
 Revision history for Pod-Weaver-PluginBundle-Author-PERLANCAR
 
+0.24    2015-06-09 (PERLANCAR)
+
+	- No functional changes.
+
+	- Add missing prereq: PWP:AppendPrepend.
+
+
 0.23    2015-04-04 (PERLANCAR)
 
 	- Add plugin: AppendPrepend.

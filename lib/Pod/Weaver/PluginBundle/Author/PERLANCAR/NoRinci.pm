@@ -30,7 +30,7 @@ sub mvp_bundle_config {
 
         [ '@Author::PERLANCAR/Completion::GetoptLongComplete', _exp('Completion::GetoptLongComplete'), {} ],
         [ '@Author::PERLANCAR/Completion::GetoptLongSubcommand', _exp('Completion::GetoptLongSubcommand'), {} ],
-        #[ '@Author::PERLANCAR/Completion::PerinciCmdLine', _exp('Completion::PerinciCmdLine'), {} ],
+        #RINCI#[ '@Author::PERLANCAR/Completion::PerinciCmdLine', _exp('Completion::PerinciCmdLine'), {} ],
 
         [ '@Author::PERLANCAR/Homepage::DefaultCPAN', _exp('Homepage::DefaultCPAN'), {} ],
         [ '@Author::PERLANCAR/Source::DefaultGitHub', _exp('Source::DefaultGitHub'), {} ],
@@ -38,9 +38,14 @@ sub mvp_bundle_config {
         [ '@Author::PERLANCAR/Authors', _exp('Authors'), {} ],
         [ '@Author::PERLANCAR/Legal', _exp('Legal'), {} ],
 
+        #RINCI#[ '@Author::PERLANCAR/Rinci', _exp('-Rinci'), {} ],
+
+        [ '@Author::PERLANCAR/AppendPrepend', _exp('-AppendPrepend'), {} ],
+
         [ '@Author::PERLANCAR/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
         #[ '@Author::PERLANCAR/List', _exp('-Transformer'), { transformer => 'List' } ],
         [ '@Author::PERLANCAR/SingleEncoding', _exp('-SingleEncoding'), {} ],
+
     );
 }
 
@@ -53,17 +58,20 @@ sub mvp_bundle_config {
 
 In C<weaver.ini>:
 
- [@Author::PERLANCAR]
+ [@Author::PERLANCAR::NoRinci]
 
 or in C<dist.ini>:
 
  [PodWeaver]
- config_plugin = @Author::PERLANCAR
+ config_plugin = @Author::PERLANCAR::NoRinci
 
 
 =head1 DESCRIPTION
 
 Equivalent to (see source code).
+
+Compared to @Author::PERLANCAR, this bundle excludes:
+Completion::PerinciCmdLine, Rinci.
 
 
 =head1 SEE ALSO

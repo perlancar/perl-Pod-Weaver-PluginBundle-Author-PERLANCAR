@@ -45,6 +45,7 @@ sub mvp_bundle_config {
         [ '@Author::PERLANCAR/EnsureUniqueSections', _exp('-EnsureUniqueSections'), {} ],
         #[ '@Author::PERLANCAR/List', _exp('-Transformer'), { transformer => 'List' } ],
         [ '@Author::PERLANCAR/SingleEncoding', _exp('-SingleEncoding'), {} ],
+        [ '@Author::PERLANCAR/PERLANCAR::SortSections', _exp('-PERLANCAR::SortSections'), {} ],
 
     );
 }

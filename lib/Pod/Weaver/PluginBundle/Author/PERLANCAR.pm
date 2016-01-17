@@ -1,6 +1,8 @@
 package Pod::Weaver::PluginBundle::Author::PERLANCAR;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;

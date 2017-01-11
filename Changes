@@ -1,3 +1,9 @@
+0.28    2017-01-11 (PERLANCAR)
+
+	- Remove section: Completion for Perinci::CmdLine because it's now
+	  already handled by PWP:Rinci.
+
+
 0.27    2016-12-10 (PERLANCAR)
 
 	- Add section: Completion::GetoptLongMore.

@@ -1,3 +1,8 @@
+0.290   2021-06-04  Released-By: PERLANCAR; Urgency: medium
+
+	- Add section: Contributors.
+
+
 0.28    2017-01-11  Released-By: PERLANCAR
 
 	- Remove section: Completion for Perinci::CmdLine because it's now

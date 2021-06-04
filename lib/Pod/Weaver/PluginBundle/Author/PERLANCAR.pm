@@ -38,6 +38,7 @@ sub mvp_bundle_config {
         [ '@Author::PERLANCAR/Source::DefaultGitHub', _exp('Source::DefaultGitHub'), {} ],
         [ '@Author::PERLANCAR/Bugs::DefaultRT', _exp('Bugs::DefaultRT'), {} ],
         [ '@Author::PERLANCAR/Authors', _exp('Authors'), {} ],
+        [ '@Author::PERLANCAR/Contributors', _exp('Contributors'), {} ],
         [ '@Author::PERLANCAR/Legal', _exp('Legal'), {} ],
 
         [ '@Author::PERLANCAR/Rinci', _exp('-Rinci'), {} ],

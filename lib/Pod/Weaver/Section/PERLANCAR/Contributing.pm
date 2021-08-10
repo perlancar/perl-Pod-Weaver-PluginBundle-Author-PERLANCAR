@@ -13,8 +13,24 @@ with 'Pod::Weaver::Role::Section';
 sub weave_section {
     my ($self, $document, $input) = @_;
 
-    #my $text = "TODO";
-    #$self->add_text_to_section($document, $text, 'CONTRIBUTING');
+    my $text = <<'_';
+
+To contribute, you can send patches by email/via RT, or send pull requests on
+GitHub.
+
+Most of the time, you don't need to build the distribution yourself. You can
+simply modify the code, then test via:
+
+ % prove -l
+
+If you want to build the distribution (e.g. to try to install it locally on your
+system), you can install L<Dist::Zilla>,
+L<Dist::Zilla::PluginBundle::Author::PERLANCAR>, and sometimes one or two other
+Dist::Zilla plugin and/or Pod::Weaver::Plugin. Any additional steps required
+beyond that are considered a bug and can be reported to me.
+
+_
+    $self->add_text_to_section($document, $text, 'CONTRIBUTING');
 }
 
 no Moose;
